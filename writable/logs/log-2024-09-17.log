@@ -1,0 +1,117 @@
+CRITICAL - 2024-09-17 06:26:18 --> ErrorException: Undefined variable: user
+in APPPATH\Views\admin\partials\header.php on line 65.
+ 1 APPPATH\Views\admin\partials\header.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\partials\\header.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('admin/partials/header', null, true)
+ 5 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('admin/partials/header')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dashboard.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 9 APPPATH\Controllers\AdminController.php(63): view('admin/dashboard', [...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\AdminController->dashboard()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-17 06:27:01 --> ErrorException: Undefined variable: user
+in APPPATH\Views\admin\partials\header.php on line 65.
+ 1 APPPATH\Views\admin\partials\header.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\partials\\header.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('admin/partials/header', null, true)
+ 5 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('admin/partials/header')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dashboard.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 9 APPPATH\Controllers\AdminController.php(63): view('admin/dashboard', [...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\AdminController->dashboard()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-17 06:27:49 --> ErrorException: Undefined variable: user
+in APPPATH\Views\admin\partials\header.php on line 85.
+ 1 APPPATH\Views\admin\partials\header.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\partials\\header.php', 85, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('admin/partials/header', null, true)
+ 5 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('admin/partials/header')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dashboard.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 9 APPPATH\Controllers\AdminController.php(63): view('admin/dashboard', [...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\AdminController->dashboard()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+ERROR - 2024-09-17 06:41:36 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `schools...', 0)
+#1 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `schools...')
+#2 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `schools...')
+#3 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `schools...', Array, false)
+#4 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\BaseModel.php(990): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Model.php(812): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\sarpras\app\Models\SchoolModel.php(89): CodeIgniter\Model->update('47', Array)
+#8 C:\xampp\htdocs\sarpras\app\Controllers\SchoolController.php(50): App\Models\SchoolModel->updateSchool('47', Array)
+#9 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\SchoolController->update('47')
+#10 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SchoolController))
+#11 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-09-17 06:41:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `schools` SET `name` = :name:, `alamat_sekolah` = :alamat_sekolah:, `alamat_email` = :alamat_email:, `status_lahan` = :status_lahan:, `luas_lahan` = :luas_lahan:, `daya_listrik` = :daya_listrik:, `instalasi_air` = :instalasi_air:, `status_internet` = :status_internet:, `nama_kepala_sekolah` = :nama_kepala_sekolah:, `nomor_telepon` = :nomor_telepon:, `foto` = :foto:, `updated_at` = :updated_at:
+WHERE `schools`.`id` IN :schools.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(990): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(812): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Models\SchoolModel.php(89): CodeIgniter\Model->update('47', [...])
+ 6 APPPATH\Controllers\SchoolController.php(50): App\Models\SchoolModel->updateSchool('47', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\SchoolController->update('47')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SchoolController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-17 06:41:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `schools` SET `name` = \'SMPN 1 PPU\', `alamat_sekolah` = \'Jln. Raya Penajam No 12, Penajam, Penajam, PPU\', `alamat_email` = \'smpn1ppu@gmail.com\', `status_lahan` = \'Segel\', `luas_lahan` = \'5712\', `daya_listrik` = \'37900\', `instalasi_air` = \'PDAM\', `status_internet` = \'Ada\', `nama_kepala_sekolah` = \'Budi Lestarianto, S.Pd\', `nomor_telepon` = \'082148730765\', `foto` = \'1726530096_53ae5e589d47e47328be.jpg\', `updated_at` = \'2024-09-17 06:41:36\'
+WHERE `schools`.`id` IN (\'47\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `schools` SET `name` = \'SMPN 1 PPU\', `alamat_sekolah` = \'Jln. Raya Penajam No 12, Penajam, Penajam, PPU\', `alamat_email` = \'smpn1ppu@gmail.com\', `status_lahan` = \'Segel\', `luas_lahan` = \'5712\', `daya_listrik` = \'37900\', `instalasi_air` = \'PDAM\', `status_internet` = \'Ada\', `nama_kepala_sekolah` = \'Budi Lestarianto, S.Pd\', `nomor_telepon` = \'082148730765\', `foto` = \'1726530096_53ae5e589d47e47328be.jpg\', `updated_at` = \'2024-09-17 06:41:36\'
+WHERE `schools`.`id` IN (\'47\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `schools` SET `name` = :name:, `alamat_sekolah` = :alamat_sekolah:, `alamat_email` = :alamat_email:, `status_lahan` = :status_lahan:, `luas_lahan` = :luas_lahan:, `daya_listrik` = :daya_listrik:, `instalasi_air` = :instalasi_air:, `status_internet` = :status_internet:, `nama_kepala_sekolah` = :nama_kepala_sekolah:, `nomor_telepon` = :nomor_telepon:, `foto` = :foto:, `updated_at` = :updated_at:
+WHERE `schools`.`id` IN :schools.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(990): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(812): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Models\SchoolModel.php(89): CodeIgniter\Model->update('47', [...])
+ 8 APPPATH\Controllers\SchoolController.php(50): App\Models\SchoolModel->updateSchool('47', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\SchoolController->update('47')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SchoolController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-17 06:41:37 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `schools` SET `name` = \'SMPN 1 PPU\', `alamat_sekolah` = \'Jln. Raya Penajam No 12, Penajam, Penajam, PPU\', `alamat_email` = \'smpn1ppu@gmail.com\', `status_lahan` = \'Segel\', `luas_lahan` = \'5712\', `daya_listrik` = \'37900\', `instalasi_air` = \'PDAM\', `status_internet` = \'Ada\', `nama_kepala_sekolah` = \'Budi Lestarianto, S.Pd\', `nomor_telepon` = \'082148730765\', `foto` = \'1726530096_53ae5e589d47e47328be.jpg\', `updated_at` = \'2024-09-17 06:41:36\'
+WHERE `schools`.`id` IN (\'47\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `schools` SET `name` = \'SMPN 1 PPU\', `alamat_sekolah` = \'Jln. Raya Penajam No 12, Penajam, Penajam, PPU\', `alamat_email` = \'smpn1ppu@gmail.com\', `status_lahan` = \'Segel\', `luas_lahan` = \'5712\', `daya_listrik` = \'37900\', `instalasi_air` = \'PDAM\', `status_internet` = \'Ada\', `nama_kepala_sekolah` = \'Budi Lestarianto, S.Pd\', `nomor_telepon` = \'082148730765\', `foto` = \'1726530096_53ae5e589d47e47328be.jpg\', `updated_at` = \'2024-09-17 06:41:36\'
+WHERE `schools`.`id` IN (\'47\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `schools` SET `name` = \'SMPN 1 PPU\', `alamat_sekolah` = \'Jln. Raya Penajam No 12, Penajam, Penajam, PPU\', `alamat_email` = \'smpn1ppu@gmail.com\', `status_lahan` = \'Segel\', `luas_lahan` = \'5712\', `daya_listrik` = \'37900\', `instalasi_air` = \'PDAM\', `status_internet` = \'Ada\', `nama_kepala_sekolah` = \'Budi Lestarianto, S.Pd\', `nomor_telepon` = \'082148730765\', `foto` = \'1726530096_53ae5e589d47e47328be.jpg\', `updated_at` = \'2024-09-17 06:41:36\'
+WHERE `schools`.`id` IN (\'47\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query('UPDATE `schools` SET `name` = :name:, `alamat_sekolah` = :alamat_sekolah:, `alamat_email` = :alamat_email:, `status_lahan` = :status_lahan:, `luas_lahan` = :luas_lahan:, `daya_listrik` = :daya_listrik:, `instalasi_air` = :instalasi_air:, `status_internet` = :status_internet:, `nama_kepala_sekolah` = :nama_kepala_sekolah:, `nomor_telepon` = :nomor_telepon:, `foto` = :foto:, `updated_at` = :updated_at:
+WHERE `schools`.`id` IN :schools.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(990): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(812): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\SchoolModel.php(89): CodeIgniter\Model->update('47', [...])
+ 9 APPPATH\Controllers\SchoolController.php(50): App\Models\SchoolModel->updateSchool('47', [...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\SchoolController->update('47')
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SchoolController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')

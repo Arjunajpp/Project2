@@ -1,0 +1,73 @@
+CRITICAL - 2024-09-16 10:10:33 --> ErrorException: Undefined index: school_id
+in APPPATH\Controllers\ProfileController.php on line 26.
+ 1 APPPATH\Controllers\ProfileController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: school_id', 'C:\\xampp\\htdocs\\sarpras\\app\\Controllers\\ProfileController.php', 26, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\ProfileController->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-16 10:12:21 --> ErrorException: Undefined index: school_id
+in APPPATH\Controllers\ProfileController.php on line 26.
+ 1 APPPATH\Controllers\ProfileController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: school_id', 'C:\\xampp\\htdocs\\sarpras\\app\\Controllers\\ProfileController.php', 26, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\ProfileController->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-16 16:00:08 --> ErrorException: Undefined index: name
+in APPPATH\Controllers\AuthController.php on line 38.
+ 1 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: name', 'C:\\xampp\\htdocs\\sarpras\\app\\Controllers\\AuthController.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\AuthController->attemptLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-16 16:45:11 --> ErrorException: Undefined index: username
+in APPPATH\Views\admin\profile.php on line 3.
+ 1 APPPATH\Views\admin\profile.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: username', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\profile.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/profile', [], true)
+ 5 APPPATH\Controllers\ProfileController.php(41): view('admin/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\ProfileController->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-16 16:46:06 --> ErrorException: Undefined variable: users
+in APPPATH\Views\admin\profile.php on line 3.
+ 1 APPPATH\Views\admin\profile.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: users', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\profile.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/profile', [], true)
+ 5 APPPATH\Controllers\ProfileController.php(41): view('admin/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\ProfileController->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-16 16:46:10 --> ErrorException: Undefined index: username
+in APPPATH\Views\admin\profile.php on line 3.
+ 1 APPPATH\Views\admin\profile.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: username', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\profile.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/profile', [], true)
+ 5 APPPATH\Controllers\ProfileController.php(41): view('admin/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\ProfileController->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-16 22:35:13 --> ErrorException: include(header.php): failed to open stream: No such file or directory
+in APPPATH\Views\admin\profile.php on line 1.
+ 1 APPPATH\Views\admin\profile.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(header.php): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\profile.php', 1, [...])
+ 2 APPPATH\Views\admin\profile.php(1): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\profile.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/profile', [], true)
+ 6 APPPATH\Controllers\ProfileController.php(40): view('admin/profile', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\ProfileController->profile()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')

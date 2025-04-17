@@ -1,0 +1,726 @@
+ERROR - 2024-09-18 00:03:05 --> mysqli_sql_exception: Table 'sarpras2.data_fisik_prioritas' doesn't exist in C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\sarpras\app\Controllers\AdminController.php(52): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\AdminController->dashboard()
+#7 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-09-18 00:03:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sarpras2.data_fisik_prioritas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_fisik_prioritas`
+WHERE `school_id` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AdminController.php(52): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\AdminController->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 00:03:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sarpras2.data_fisik_prioritas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_fisik_prioritas`
+WHERE `school_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_fisik_prioritas`
+WHERE `school_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_fisik_prioritas`
+WHERE `school_id` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AdminController.php(52): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 00:03:05 --> [Caused by] mysqli_sql_exception: Table 'sarpras2.data_fisik_prioritas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_fisik_prioritas`
+WHERE `school_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_fisik_prioritas`
+WHERE `school_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_fisik_prioritas`
+WHERE `school_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_fisik_prioritas`
+WHERE `school_id` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(625): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AdminController.php(52): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\AdminController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 00:07:04 --> Error: Class 'App\Models\DataFisikPrioritasModel' not found
+in APPPATH\Controllers\AdminController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+ERROR - 2024-09-18 06:31:44 --> mysqli_sql_exception: Table 'sarpras.users' doesn't exist in engine in C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\BaseModel.php(679): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\sarpras\app\Controllers\AuthController.php(32): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\AuthController->attemptLogin()
+#8 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-18 06:31:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sarpras.users' doesn't exist in engine
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\AuthController.php(32): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\AuthController->attemptLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 06:31:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sarpras.users' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'test@test.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'test@test.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\AuthController.php(32): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\AuthController->attemptLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 06:31:44 --> [Caused by] mysqli_sql_exception: Table 'sarpras.users' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `email` = \'test@test.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'test@test.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'test@test.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\AuthController.php(32): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 06:55:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/kategori_aset/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/kategori_aset/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/kategori_aset/index', [], true)
+ 3 APPPATH\Controllers\DependencyController.php(16): view('admin/kategori_aset/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DependencyController->indexKategoriAset()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+ERROR - 2024-09-18 07:16:25 --> mysqli_sql_exception: Column 'sekolah_id' cannot be null in C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ka...', 0)
+#1 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\sarpras\app\Controllers\DependencyController.php(33): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DependencyController->storeKategoriAset()
+#9 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+#10 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-09-18 07:16:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'sekolah_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kategori_aset` (`nama_kategori`, `status`, `sekolah_id`) VALUES (:nama_kategori:, :status:, :sekolah_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DependencyController.php(33): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DependencyController->storeKategoriAset()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 07:16:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'sekolah_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kategori_aset` (`nama_kategori`, `status`, `sekolah_id`) VALUES (\'Meja Dan Kursi RKB\', \'aktif\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kategori_aset` (`nama_kategori`, `status`, `sekolah_id`) VALUES (\'Meja Dan Kursi RKB\', \'aktif\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kategori_aset` (`nama_kategori`, `status`, `sekolah_id`) VALUES (:nama_kategori:, :status:, :sekolah_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DependencyController.php(33): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DependencyController->storeKategoriAset()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 07:16:25 --> [Caused by] mysqli_sql_exception: Column 'sekolah_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kategori_aset` (`nama_kategori`, `status`, `sekolah_id`) VALUES (\'Meja Dan Kursi RKB\', \'aktif\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kategori_aset` (`nama_kategori`, `status`, `sekolah_id`) VALUES (\'Meja Dan Kursi RKB\', \'aktif\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kategori_aset` (`nama_kategori`, `status`, `sekolah_id`) VALUES (\'Meja Dan Kursi RKB\', \'aktif\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kategori_aset` (`nama_kategori`, `status`, `sekolah_id`) VALUES (:nama_kategori:, :status:, :sekolah_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(805): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DependencyController.php(33): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DependencyController->storeKategoriAset()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+ERROR - 2024-09-18 07:21:18 --> mysqli_sql_exception: Unknown column 'sekolah_id' in 'where clause' in C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\sarpras\app\Controllers\DependencyController.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DependencyController->indexKategoriAset()
+#8 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+#9 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-18 07:21:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sekolah_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_aset`
+WHERE `sekolah_id` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DependencyController.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DependencyController->indexKategoriAset()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 07:21:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sekolah_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kategori_aset`
+WHERE `sekolah_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kategori_aset`
+WHERE `sekolah_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_aset`
+WHERE `sekolah_id` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DependencyController.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DependencyController->indexKategoriAset()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 07:21:18 --> [Caused by] mysqli_sql_exception: Unknown column 'sekolah_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `kategori_aset`
+WHERE `sekolah_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kategori_aset`
+WHERE `sekolah_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kategori_aset`
+WHERE `sekolah_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_aset`
+WHERE `sekolah_id` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DependencyController.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DependencyController->indexKategoriAset()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+ERROR - 2024-09-18 07:58:15 --> mysqli_sql_exception: Unknown column 'school_id' in 'where clause' in C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\sarpras\app\Controllers\DependencyController.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\DependencyController->indexKategoriAset()
+#8 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+#9 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sarpras\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-18 07:58:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'school_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_aset`
+WHERE `school_id` = :school_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DependencyController.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DependencyController->indexKategoriAset()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 07:58:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'school_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kategori_aset`
+WHERE `school_id` = \'47\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kategori_aset`
+WHERE `school_id` = \'47\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_aset`
+WHERE `school_id` = :school_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DependencyController.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DependencyController->indexKategoriAset()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 07:58:15 --> [Caused by] mysqli_sql_exception: Unknown column 'school_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `kategori_aset`
+WHERE `school_id` = \'47\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kategori_aset`
+WHERE `school_id` = \'47\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kategori_aset`
+WHERE `school_id` = \'47\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_aset`
+WHERE `school_id` = :school_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DependencyController.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DependencyController->indexKategoriAset()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DependencyController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:30:23 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:30:25 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:30:39 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:31:54 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:31:55 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:31:56 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:31:56 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:31:56 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:31:57 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:31:58 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:32:20 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 54.
+ 1 APPPATH\Views\admin\dataaset\detail.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:33:56 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:33:57 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:33:57 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:33:57 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:34:21 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:34:22 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:34:22 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:34:23 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:34:23 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:34:23 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:34:23 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:34:23 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:34:24 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:34:24 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:35:44 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:35:44 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:35:45 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:35:45 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:35:45 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
+CRITICAL - 2024-09-18 10:35:45 --> ErrorException: Undefined index: kategori_aset_nama
+in APPPATH\Views\admin\dataaset\detail.php on line 46.
+ 1 APPPATH\Views\admin\dataaset\detail.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kategori_aset_nama', 'C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sarpras\\app\\Views\\admin\\dataaset\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/dataaset/detail', [], true)
+ 5 APPPATH\Controllers\DataAsetController.php(80): view('admin/dataaset/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\DataAsetController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataAsetController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sarpras\\public\\index.php')
